@@ -151,7 +151,7 @@ Repository setup, needed once for releases to work:
 
 ## Professional setup & support
 
-Need help receiving, validating or sending e-invoices in your business, or integrating this service into n8n, your ERP or your bookkeeping? Write to oss@effizienzagent.de (English or German). German-speaking SMEs: see [mittelstandshub.de](https://mittelstandshub.de).
+Need help receiving, validating or sending e-invoices in your business, or integrating this service into n8n, your ERP or your bookkeeping? Write to oss@effizienzagent.de (English or German). German-speaking SMEs: see [E-Rechnung anbinden](https://effizienzagent.de/e-rechnung-anbinden/).
 
 ## Licences
 
