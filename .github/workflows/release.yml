@@ -105,14 +105,17 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+      - id: version
+        if: env.RELEASED == 'true'
+        run: echo "semver=v${TAG##*v}" >> "$GITHUB_OUTPUT"
       - id: meta
         uses: docker/metadata-action@c299e40c65443455700f0fdfc63efafe5b349051 # v5.10.0
         with:
           images: ${{ env.IMAGE }}
           tags: |
-            type=semver,pattern={{version}},value=${{ env.TAG }},enable=${{ env.RELEASED }}
-            type=semver,pattern={{major}}.{{minor}},value=${{ env.TAG }},enable=${{ env.RELEASED }}
-            type=semver,pattern={{major}},value=${{ env.TAG }},enable=${{ env.RELEASED }}
+            type=semver,pattern={{version}},value=${{ steps.version.outputs.semver }},enable=${{ env.RELEASED }}
+            type=semver,pattern={{major}}.{{minor}},value=${{ steps.version.outputs.semver }},enable=${{ env.RELEASED }}
+            type=semver,pattern={{major}},value=${{ steps.version.outputs.semver }},enable=${{ env.RELEASED }}
             type=raw,value=latest,enable=${{ env.RELEASED }}
             type=raw,value=edge,enable=${{ env.RELEASED != 'true' }}
       - name: Create multi-arch manifest
