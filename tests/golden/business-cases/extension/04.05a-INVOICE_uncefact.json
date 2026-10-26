@@ -1,0 +1,167 @@
+{
+  "number": "2020-1",
+  "typeCode": "380",
+  "type": "invoice",
+  "isCreditNote": false,
+  "issueDate": "2020-01-03",
+  "dueDate": "2020-01-17",
+  "taxPointDate": null,
+  "currency": "EUR",
+  "taxCurrency": null,
+  "buyerReference": "Leitweg-ID",
+  "orderReference": null,
+  "salesOrderReference": null,
+  "contractReference": null,
+  "projectReference": null,
+  "buyerAccountingReference": null,
+  "invoicedObjectIdentifier": null,
+  "receivingAdviceReference": null,
+  "despatchAdviceReference": null,
+  "tenderReference": null,
+  "businessProcess": "urn:fdc:peppol.eu:2017:poacc:billing:01:1.0",
+  "precedingInvoices": [],
+  "deliveryDate": "2020-01-02",
+  "invoicingPeriod": null,
+  "notes": [
+    {
+      "subjectCode": null,
+      "text": "Eine Testrechnung für das Projekt DiGA-Rechnung."
+    }
+  ],
+  "paymentTerms": null,
+  "payment": {
+    "meansCode": "30",
+    "meansText": null,
+    "remittanceInformation": null,
+    "accounts": [
+      {
+        "iban": "DE79000000001234567890",
+        "bic": null,
+        "name": null
+      }
+    ],
+    "card": null,
+    "directDebit": null
+  },
+  "seller": {
+    "name": "Rechnungssteller",
+    "tradingName": null,
+    "identifiers": [
+      {
+        "value": "987654321",
+        "scheme": "XR03"
+      },
+      {
+        "value": "TEST_RECHNUNGSSTELLER",
+        "scheme": null
+      }
+    ],
+    "legalRegistrationId": null,
+    "vatId": "DE 123 456 789",
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "seller@email.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "Musterstraße 1",
+      "line2": null,
+      "line3": null,
+      "city": "Berlin",
+      "postalCode": "01234",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "Max Mustermann",
+      "phone": "+49 000 001 0001",
+      "email": "max.mustermann@rechnungssteller.de"
+    }
+  },
+  "buyer": {
+    "name": "Rechnungsempfänger",
+    "tradingName": null,
+    "identifiers": [
+      {
+        "value": "123456789",
+        "scheme": "XR03"
+      }
+    ],
+    "legalRegistrationId": null,
+    "vatId": null,
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "buyer@info.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "Musterstraße 2",
+      "line2": null,
+      "line3": null,
+      "city": "Berlin",
+      "postalCode": "01234",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": null
+  },
+  "payee": {
+    "name": "Payee",
+    "identifier": "987654322",
+    "legalRegistrationId": null
+  },
+  "taxRepresentative": null,
+  "delivery": null,
+  "totals": {
+    "lineNetTotal": 100.0,
+    "allowanceTotal": null,
+    "chargeTotal": null,
+    "netTotal": 100.0,
+    "vatTotal": 19.0,
+    "vatTotalTaxCurrency": null,
+    "grossTotal": 119.0,
+    "prepaidAmount": null,
+    "roundingAmount": null,
+    "amountDue": 119.0
+  },
+  "vatBreakdown": [
+    {
+      "categoryCode": "S",
+      "rate": 19.0,
+      "taxableAmount": 100.0,
+      "taxAmount": 19.0,
+      "exemptionReason": null,
+      "exemptionReasonCode": null
+    }
+  ],
+  "allowancesCharges": [],
+  "lines": [
+    {
+      "id": "TEST_POSITION_01",
+      "name": "Tinnitus Rex",
+      "description": "Ein Artikel für Testrechnungen.",
+      "note": null,
+      "quantity": 1.0,
+      "unitCode": "C62",
+      "netPrice": 100.0,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": 100.0,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": null,
+      "buyerItemId": "ABCDEFGHIJKLMNOP",
+      "standardItemId": "12345678",
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    }
+  ],
+  "attachments": []
+}

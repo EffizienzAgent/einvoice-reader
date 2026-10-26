@@ -1,0 +1,156 @@
+{
+  "number": "1234/78/901",
+  "typeCode": "380",
+  "type": "invoice",
+  "isCreditNote": false,
+  "issueDate": "2016-06-16",
+  "dueDate": null,
+  "taxPointDate": null,
+  "currency": "EUR",
+  "taxCurrency": null,
+  "buyerReference": "04011000-12348-91",
+  "orderReference": null,
+  "salesOrderReference": null,
+  "contractReference": null,
+  "projectReference": null,
+  "buyerAccountingReference": null,
+  "invoicedObjectIdentifier": null,
+  "receivingAdviceReference": null,
+  "despatchAdviceReference": null,
+  "tenderReference": null,
+  "businessProcess": "urn:fdc:peppol.eu:2017:poacc:billing:01:1.0",
+  "precedingInvoices": [],
+  "deliveryDate": null,
+  "invoicingPeriod": null,
+  "notes": [
+    {
+      "subjectCode": "ADU",
+      "text": "Diese Leistung ist umsatzsteuerbefreit nach § 4 Nr. 22a UStG."
+    }
+  ],
+  "paymentTerms": "Wir möchten Sie bitten, die Teilnahmegebühr iHv. 120,00 € innerhalb von 14 Tagen auf das oben genannte Konto unter Angabe der Rechnungsnummer 1234/78/901 zu überweisen.",
+  "payment": {
+    "meansCode": "58",
+    "meansText": null,
+    "remittanceInformation": null,
+    "accounts": [
+      {
+        "iban": "DE79000000001234567890",
+        "bic": null,
+        "name": null
+      }
+    ],
+    "card": null,
+    "directDebit": null
+  },
+  "seller": {
+    "name": "[Seller name]",
+    "tradingName": "[Seller trading name]",
+    "identifiers": [],
+    "legalRegistrationId": {
+      "value": "VR 12345 Nz",
+      "scheme": null
+    },
+    "vatId": null,
+    "taxNumber": "12/345/67890",
+    "electronicAddress": {
+      "value": "seller@email.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Seller address line 1]",
+      "line2": "[Seller address line 2]",
+      "line3": null,
+      "city": "[Seller city]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "[…]",
+      "phone": "+49 (0)12-345678-90",
+      "email": "mail@seller.eu"
+    }
+  },
+  "buyer": {
+    "name": "[Buyer name]",
+    "tradingName": null,
+    "identifiers": [],
+    "legalRegistrationId": null,
+    "vatId": null,
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "buyer@info.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Buyer address line 1]",
+      "line2": "[Buyer address line 2]",
+      "line3": null,
+      "city": "[Buyer city]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "[Buyer contact person]",
+      "phone": null,
+      "email": null
+    }
+  },
+  "payee": null,
+  "taxRepresentative": null,
+  "delivery": null,
+  "totals": {
+    "lineNetTotal": 120.0,
+    "allowanceTotal": null,
+    "chargeTotal": null,
+    "netTotal": 120.0,
+    "vatTotal": 0.0,
+    "vatTotalTaxCurrency": null,
+    "grossTotal": 120.0,
+    "prepaidAmount": null,
+    "roundingAmount": null,
+    "amountDue": 120.0
+  },
+  "vatBreakdown": [
+    {
+      "categoryCode": "O",
+      "rate": 0.0,
+      "taxableAmount": 120.0,
+      "taxAmount": 0.0,
+      "exemptionReason": "als gemeinnützig anerkannt",
+      "exemptionReasonCode": null
+    }
+  ],
+  "allowancesCharges": [],
+  "lines": [
+    {
+      "id": "Teilnahmegebühr",
+      "name": "Teilnahmegebühr",
+      "description": "Anmeldung von […]",
+      "note": null,
+      "quantity": 1.0,
+      "unitCode": "XPP",
+      "netPrice": 120.0,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": 120.0,
+      "vatCategoryCode": "O",
+      "vatRate": null,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    }
+  ],
+  "attachments": []
+}

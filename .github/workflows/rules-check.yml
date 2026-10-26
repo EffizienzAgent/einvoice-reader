@@ -1,0 +1,37 @@
+name: Rules check
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
+      - name: Compare vendored rules with latest releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          version="$(cat src/einvoice_reader/rules/kosit/VERSION)"
+          tag="$(gh release view -R itplr-kosit/validator-configuration-xrechnung --json tagName --jq .tagName)"
+          if [[ "$version" == *"-${tag#v}" ]]; then
+            echo "Rules are up to date ($version)"
+            exit 0
+          fi
+          outdated=("KoSIT validator configuration $tag")
+          title="New validation rules: ${outdated[*]}"
+          if gh issue list --state open --limit 100 --json title --jq '.[].title' | grep -Fxq "$title"; then
+            echo "Issue already open: $title"
+            exit 0
+          fi
+          gh issue create --title "$title" \
+            --body "Run \`scripts/update_rules.sh\`, check the test suite and release."

@@ -1,0 +1,172 @@
+{
+  "number": "R1234567",
+  "typeCode": "380",
+  "type": "invoice",
+  "isCreditNote": false,
+  "issueDate": "2016-06-30",
+  "dueDate": "2016-08-14",
+  "taxPointDate": null,
+  "currency": "EUR",
+  "taxCurrency": null,
+  "buyerReference": "99000000-05676-98",
+  "orderReference": null,
+  "salesOrderReference": null,
+  "contractReference": null,
+  "projectReference": null,
+  "buyerAccountingReference": null,
+  "invoicedObjectIdentifier": null,
+  "receivingAdviceReference": null,
+  "despatchAdviceReference": null,
+  "tenderReference": null,
+  "businessProcess": "urn:fdc:peppol.eu:2017:poacc:billing:01:1.0",
+  "precedingInvoices": [],
+  "deliveryDate": null,
+  "invoicingPeriod": {
+    "start": "2016-06-01",
+    "end": "2016-06-30"
+  },
+  "notes": [
+    {
+      "subjectCode": "ADU",
+      "text": "Bitte überweisen Sie den Gesamtbetrag in Höhe von EUR 45,22 auf unser Konto Nr. […], BIC […]."
+    },
+    {
+      "subjectCode": "ADU",
+      "text": "Bei Fragen steht Ihnen unsere Kundenbetreuung gern unter der Rufnummer [...] zur Verfügung. Beanstandungen am Inhalt dieser Rechnung sind uns innerhalb von 28 Tagen nach Erhalt der Rechnung schriftlich mitzuteilen. Nach Ablauf dieser Frist gilt der Saldo endgültig."
+    },
+    {
+      "subjectCode": "ADU",
+      "text": "Die Deutsche Kreditwirtschaft hat die Händlerbedingungen für die Teilnahme am electronic cash-System angepasst. Sie finden diese unter https://www…./de/agb. Die neuen Händlerbedingungen gelten ab sofort, wobei Sie binnen sechs Wochen nach Bekanntgabe der Änderung einen Widerspruch an Ihre Hausbank richten können. Bitte klären Sie sämtliche Fragen diese Bedingungen betreffend mit Ihrer Hausbank."
+    }
+  ],
+  "paymentTerms": "Bis zum 14.08.2016 ohne Abzug",
+  "payment": {
+    "meansCode": "58",
+    "meansText": null,
+    "remittanceInformation": null,
+    "accounts": [
+      {
+        "iban": "DE79000000001234567890",
+        "bic": null,
+        "name": null
+      }
+    ],
+    "card": null,
+    "directDebit": null
+  },
+  "seller": {
+    "name": "[Seller name]",
+    "tradingName": null,
+    "identifiers": [],
+    "legalRegistrationId": null,
+    "vatId": "DE123456789",
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "seller@email.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Seller address line 1]",
+      "line2": null,
+      "line3": null,
+      "city": "[Seller city]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "[Seller contact person]",
+      "phone": "+49 (0)69…",
+      "email": "seller@info.de"
+    }
+  },
+  "buyer": {
+    "name": "[Buyer name]",
+    "tradingName": null,
+    "identifiers": [
+      {
+        "value": "B123456789",
+        "scheme": null
+      }
+    ],
+    "legalRegistrationId": null,
+    "vatId": "DE123456789",
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "buyer@info.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Buyer address line 1]",
+      "line2": null,
+      "line3": null,
+      "city": "[Buyer city]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "[Buyer contact person]",
+      "phone": null,
+      "email": null
+    }
+  },
+  "payee": null,
+  "taxRepresentative": null,
+  "delivery": null,
+  "totals": {
+    "lineNetTotal": 38.0,
+    "allowanceTotal": null,
+    "chargeTotal": null,
+    "netTotal": 38.0,
+    "vatTotal": 7.22,
+    "vatTotalTaxCurrency": null,
+    "grossTotal": 45.22,
+    "prepaidAmount": null,
+    "roundingAmount": null,
+    "amountDue": 45.22
+  },
+  "vatBreakdown": [
+    {
+      "categoryCode": "S",
+      "rate": 19.0,
+      "taxableAmount": 38.0,
+      "taxAmount": 7.22,
+      "exemptionReason": null,
+      "exemptionReasonCode": null
+    }
+  ],
+  "allowancesCharges": [],
+  "lines": [
+    {
+      "id": "000040",
+      "name": "Miete X",
+      "description": null,
+      "note": null,
+      "quantity": 1.0,
+      "unitCode": "MON",
+      "netPrice": 38.0,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": 38.0,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": {
+        "start": "2016-06-01",
+        "end": "2016-06-30"
+      },
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    }
+  ],
+  "attachments": []
+}

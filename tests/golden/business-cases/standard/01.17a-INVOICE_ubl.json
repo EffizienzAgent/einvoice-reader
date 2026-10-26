@@ -1,0 +1,192 @@
+{
+  "number": "123456XX",
+  "typeCode": "380",
+  "type": "invoice",
+  "isCreditNote": false,
+  "issueDate": "2016-04-04",
+  "dueDate": null,
+  "taxPointDate": null,
+  "currency": "EUR",
+  "taxCurrency": null,
+  "buyerReference": "04011000-12345-03",
+  "orderReference": null,
+  "salesOrderReference": null,
+  "contractReference": null,
+  "projectReference": null,
+  "buyerAccountingReference": null,
+  "invoicedObjectIdentifier": null,
+  "receivingAdviceReference": null,
+  "despatchAdviceReference": null,
+  "tenderReference": null,
+  "businessProcess": "urn:fdc:peppol.eu:2017:poacc:billing:01:1.0",
+  "precedingInvoices": [],
+  "deliveryDate": null,
+  "invoicingPeriod": null,
+  "notes": [
+    {
+      "subjectCode": "ADU",
+      "text": "Es gelten unsere Allgem. Geschäftsbedingungen, die Sie unter […] finden."
+    }
+  ],
+  "paymentTerms": "Zahlbar sofort ohne Abzug.",
+  "payment": {
+    "meansCode": "58",
+    "meansText": null,
+    "remittanceInformation": null,
+    "accounts": [
+      {
+        "iban": "DE79000000001234567890",
+        "bic": null,
+        "name": null
+      }
+    ],
+    "card": null,
+    "directDebit": null
+  },
+  "seller": {
+    "name": "[Seller name]",
+    "tradingName": "[Seller trading name]",
+    "identifiers": [],
+    "legalRegistrationId": {
+      "value": "[HRA-Eintrag]",
+      "scheme": null
+    },
+    "vatId": "DE 123456789",
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "seller@email.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Seller address line 1]",
+      "line2": null,
+      "line3": null,
+      "city": "[Seller city]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "nicht vorhanden",
+      "phone": "+49 1234-5678",
+      "email": "seller@email.de"
+    }
+  },
+  "buyer": {
+    "name": "[Buyer name]",
+    "tradingName": null,
+    "identifiers": [
+      {
+        "value": "[Buyer identifier]",
+        "scheme": null
+      }
+    ],
+    "legalRegistrationId": null,
+    "vatId": null,
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "buyer@info.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Buyer address line 1]",
+      "line2": null,
+      "line3": null,
+      "city": "[Buyer city]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": null
+  },
+  "payee": null,
+  "taxRepresentative": null,
+  "delivery": null,
+  "totals": {
+    "lineNetTotal": 314.86,
+    "allowanceTotal": null,
+    "chargeTotal": null,
+    "netTotal": 314.86,
+    "vatTotal": 22.04,
+    "vatTotalTaxCurrency": null,
+    "grossTotal": 336.9,
+    "prepaidAmount": null,
+    "roundingAmount": 0.01,
+    "amountDue": 336.91
+  },
+  "vatBreakdown": [
+    {
+      "categoryCode": "S",
+      "rate": 7.0,
+      "taxableAmount": 314.86,
+      "taxAmount": 22.04,
+      "exemptionReason": null,
+      "exemptionReasonCode": null
+    }
+  ],
+  "allowancesCharges": [],
+  "lines": [
+    {
+      "id": "Zeitschrift [...]",
+      "name": "Zeitschrift [...]",
+      "description": "Zeitschrift Inland",
+      "note": "Die letzte Lieferung im Rahmen des abgerechneten Abonnements erfolgt in 12/2016 Lieferung erfolgt / erfolgte direkt vom Verlag",
+      "quantity": 1.0,
+      "unitCode": "XPP",
+      "netPrice": 288.79,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": 288.79,
+      "vatCategoryCode": "S",
+      "vatRate": 7.0,
+      "sellerItemId": "246",
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": "6171175.1",
+      "period": {
+        "start": "2016-01-01",
+        "end": "2016-12-31"
+      },
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": [
+        {
+          "value": "0721-880X",
+          "scheme": "IB",
+          "version": null
+        }
+      ]
+    },
+    {
+      "id": "Porto + Versandkosten",
+      "name": "Porto + Versandkosten",
+      "description": null,
+      "note": null,
+      "quantity": 1.0,
+      "unitCode": "XPP",
+      "netPrice": 26.07,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": 26.07,
+      "vatCategoryCode": "S",
+      "vatRate": 7.0,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    }
+  ],
+  "attachments": []
+}

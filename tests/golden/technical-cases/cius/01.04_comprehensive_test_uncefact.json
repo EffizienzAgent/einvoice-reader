@@ -1,0 +1,310 @@
+{
+  "number": "1234567",
+  "typeCode": "380",
+  "type": "invoice",
+  "isCreditNote": false,
+  "issueDate": "2018-04-13",
+  "dueDate": "2018-04-13",
+  "taxPointDate": "2018-04-13",
+  "currency": "EUR",
+  "taxCurrency": "GBP",
+  "buyerReference": "90000000-03083-72",
+  "orderReference": "65002278",
+  "salesOrderReference": "ABC123456789",
+  "contractReference": "0000000752",
+  "projectReference": "PR12345678",
+  "buyerAccountingReference": "Buchungscode1",
+  "invoicedObjectIdentifier": {
+    "value": "OK987654321",
+    "scheme": null
+  },
+  "receivingAdviceReference": "RAR123456789",
+  "despatchAdviceReference": "DAR123456789",
+  "tenderReference": "ANG987654321",
+  "businessProcess": "urn:fdc:peppol.eu:2017:poacc:billing:01:1.0",
+  "precedingInvoices": [
+    {
+      "number": "PIR1234567890",
+      "issueDate": "2018-02-04"
+    }
+  ],
+  "deliveryDate": "2018-04-13",
+  "invoicingPeriod": {
+    "start": "2018-04-13",
+    "end": "2018-04-13"
+  },
+  "notes": [
+    {
+      "subjectCode": "AAC",
+      "text": "Invoice Note Description"
+    }
+  ],
+  "paymentTerms": "Beschreibung 1: Bitte überweisen Sie bis zum 13.04.2018 auf das unten aufgeführte Konto.",
+  "payment": {
+    "meansCode": "59",
+    "meansText": "[Payment means text]",
+    "remittanceInformation": "Deb. 12345 / Fact. 9876543",
+    "accounts": [],
+    "card": null,
+    "directDebit": {
+      "mandateReference": "[Mandate Reference Identifier]",
+      "creditorId": "[Bank assigned creditor identifier]",
+      "debitedAccount": "DE79000000001234567890"
+    }
+  },
+  "seller": {
+    "name": "[Seller name]",
+    "tradingName": "[Seller trading name]",
+    "identifiers": [
+      {
+        "value": "987654321",
+        "scheme": "0088"
+      }
+    ],
+    "legalRegistrationId": {
+      "value": "123456789",
+      "scheme": "0088"
+    },
+    "vatId": "ATU123456789",
+    "taxNumber": "123/456/789",
+    "electronicAddress": {
+      "value": "rechnungsausgang@test.com",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Seller address line 1]",
+      "line2": "[Seller address line 2]",
+      "line3": "[Seller address line 3]",
+      "city": "[Seller city]",
+      "postalCode": "12345",
+      "countrySubdivision": "Bayern",
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "Testorganisation",
+      "phone": "012 3456789",
+      "email": "tim.tester@test.com"
+    }
+  },
+  "buyer": {
+    "name": "[Buyer name]",
+    "tradingName": "[Buyer trading name]",
+    "identifiers": [
+      {
+        "value": "138",
+        "scheme": null
+      }
+    ],
+    "legalRegistrationId": {
+      "value": "90000000-03083-72",
+      "scheme": "0204"
+    },
+    "vatId": "DE12345ABC",
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "rechnungseingang@test.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Buyer address line 1]",
+      "line2": "[Buyer address line 2]",
+      "line3": "[Buyer address line 3]",
+      "city": "[Buyer city]",
+      "postalCode": "98765",
+      "countrySubdivision": "Bayern",
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "Tina Tester",
+      "phone": "0800 123456",
+      "email": "tester@test.de"
+    }
+  },
+  "payee": {
+    "name": "[Payee name]",
+    "identifier": "74",
+    "legalRegistrationId": {
+      "value": "90000000-03083-72",
+      "scheme": "0204"
+    }
+  },
+  "taxRepresentative": {
+    "name": "[Seller tax representative name]",
+    "vatId": "DE124567",
+    "address": {
+      "line1": "[Seller tax representative address line 1]",
+      "line2": "[Seller tax representative address line 2]",
+      "line3": "[Seller tax representative address line 3]",
+      "city": "[Seller tax representative city]",
+      "postalCode": "12345",
+      "countrySubdivision": "Bayern",
+      "countryCode": "DE"
+    }
+  },
+  "delivery": {
+    "partyName": "[Deliver to party name]",
+    "locationId": "68",
+    "address": {
+      "line1": "[Deliver to street]",
+      "line2": "4. OG",
+      "line3": "More Details",
+      "city": "[Deliver to city]",
+      "postalCode": "98765",
+      "countrySubdivision": "Bayern",
+      "countryCode": "DE"
+    }
+  },
+  "totals": {
+    "lineNetTotal": 10781.25,
+    "allowanceTotal": 0.0,
+    "chargeTotal": 0.0,
+    "netTotal": 10781.25,
+    "vatTotal": 2048.44,
+    "vatTotalTaxCurrency": 2048.44,
+    "grossTotal": 12829.69,
+    "prepaidAmount": 0.0,
+    "roundingAmount": 0.0,
+    "amountDue": 12829.69
+  },
+  "vatBreakdown": [
+    {
+      "categoryCode": "S",
+      "rate": 19.0,
+      "taxableAmount": 10781.25,
+      "taxAmount": 2048.44,
+      "exemptionReason": null,
+      "exemptionReasonCode": null
+    },
+    {
+      "categoryCode": "E",
+      "rate": 0.0,
+      "taxableAmount": 0.0,
+      "taxAmount": 0.0,
+      "exemptionReason": "[VAT exemption reason text]",
+      "exemptionReasonCode": "VATEX-EU-132-1A"
+    }
+  ],
+  "allowancesCharges": [
+    {
+      "isCharge": false,
+      "amount": 0.0,
+      "baseAmount": 0.0,
+      "percent": 0.0,
+      "reason": "Fixed long term",
+      "reasonCode": "102",
+      "vatCategoryCode": "E",
+      "vatRate": 0.0
+    },
+    {
+      "isCharge": true,
+      "amount": 0.0,
+      "baseAmount": 0.0,
+      "percent": 0.0,
+      "reason": "Testing",
+      "reasonCode": "TAC",
+      "vatCategoryCode": "E",
+      "vatRate": 0.0
+    }
+  ],
+  "lines": [
+    {
+      "id": "1",
+      "name": "Beratung",
+      "description": "Anforderungmanagament",
+      "note": "Die letzte Lieferung im Rahmen des abgerechneten Abonnements erfolgt in 12/2016 Lieferung erfolgt / erfolgte direkt vom Verlag",
+      "quantity": 30.0,
+      "unitCode": "XPP",
+      "netPrice": 158.125,
+      "grossPrice": 168.125,
+      "priceBaseQuantity": null,
+      "netAmount": 4743.75,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": "1034",
+      "buyerItemId": "5034",
+      "standardItemId": "123456789",
+      "orderLineReference": "6171175.1",
+      "period": {
+        "start": "2018-04-13",
+        "end": "2018-04-13"
+      },
+      "allowancesCharges": [
+        {
+          "isCharge": false,
+          "amount": 0.0,
+          "baseAmount": 0.0,
+          "percent": 0.0,
+          "reason": "Fixed long term",
+          "reasonCode": "102",
+          "vatCategoryCode": null,
+          "vatRate": null
+        },
+        {
+          "isCharge": true,
+          "amount": 0.0,
+          "baseAmount": 0.0,
+          "percent": 0.0,
+          "reason": "Testing",
+          "reasonCode": "TAC",
+          "vatCategoryCode": null,
+          "vatRate": null
+        }
+      ],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": "Konto 1",
+      "objectIdentifier": {
+        "value": "ANG987654321",
+        "scheme": "ABZ"
+      },
+      "attributes": [
+        {
+          "name": "[Description]",
+          "value": "[Value]"
+        }
+      ],
+      "classifications": [
+        {
+          "value": "0721-880X",
+          "scheme": "IB",
+          "version": "88"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Beratung",
+      "description": null,
+      "note": null,
+      "quantity": 42.0,
+      "unitCode": "XPP",
+      "netPrice": 143.75,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": 6037.5,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    }
+  ],
+  "attachments": [
+    {
+      "id": "01_15_Anhang_01.pdf",
+      "description": "Aufschlüsselung der einzelnen Leistungspositionen",
+      "fileName": "01_15_Anhang_01.pdf",
+      "mimeType": "application/pdf",
+      "uri": "https://xeinkauf.de/xrechnung/"
+    }
+  ]
+}

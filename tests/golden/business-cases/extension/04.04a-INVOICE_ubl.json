@@ -1,0 +1,149 @@
+{
+  "number": "17794",
+  "typeCode": "877",
+  "type": "invoice",
+  "isCreditNote": false,
+  "issueDate": "2021-07-14",
+  "dueDate": null,
+  "taxPointDate": null,
+  "currency": "EUR",
+  "taxCurrency": null,
+  "buyerReference": "992-90009-96",
+  "orderReference": null,
+  "salesOrderReference": null,
+  "contractReference": null,
+  "projectReference": null,
+  "buyerAccountingReference": null,
+  "invoicedObjectIdentifier": null,
+  "receivingAdviceReference": null,
+  "despatchAdviceReference": null,
+  "tenderReference": null,
+  "businessProcess": "urn:fdc:peppol.eu:2017:poacc:billing:01:1.0",
+  "precedingInvoices": [],
+  "deliveryDate": null,
+  "invoicingPeriod": null,
+  "notes": [],
+  "paymentTerms": "Zahlung ohne Abzug bis zum 13.08.2021 bei uns\n            eingehend.",
+  "payment": {
+    "meansCode": "58",
+    "meansText": null,
+    "remittanceInformation": null,
+    "accounts": [
+      {
+        "iban": "DE79000000001234567890",
+        "bic": null,
+        "name": null
+      }
+    ],
+    "card": null,
+    "directDebit": null
+  },
+  "seller": {
+    "name": "Test Gerüstbau GmbH",
+    "tradingName": null,
+    "identifiers": [],
+    "legalRegistrationId": null,
+    "vatId": "DE814060619",
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "seller@email.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "Bahnhofstraße 46",
+      "line2": null,
+      "line3": null,
+      "city": "Gerüstbau Ort",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "Frau Test",
+      "phone": "0123/456 78-0",
+      "email": "test@test.test"
+    }
+  },
+  "buyer": {
+    "name": "Bau Auftraggeber",
+    "tradingName": null,
+    "identifiers": [
+      {
+        "value": "14217",
+        "scheme": null
+      }
+    ],
+    "legalRegistrationId": null,
+    "vatId": null,
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "buyer@info.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "Am Mühlberg 4",
+      "line2": null,
+      "line3": null,
+      "city": "Gerüstbau Ort",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": null
+  },
+  "payee": null,
+  "taxRepresentative": null,
+  "delivery": null,
+  "totals": {
+    "lineNetTotal": 3508.77,
+    "allowanceTotal": null,
+    "chargeTotal": null,
+    "netTotal": 3508.77,
+    "vatTotal": 666.67,
+    "vatTotalTaxCurrency": null,
+    "grossTotal": 4175.44,
+    "prepaidAmount": null,
+    "roundingAmount": null,
+    "amountDue": 4175.44
+  },
+  "vatBreakdown": [
+    {
+      "categoryCode": "S",
+      "rate": 19.0,
+      "taxableAmount": 3508.77,
+      "taxAmount": 666.67,
+      "exemptionReason": null,
+      "exemptionReasonCode": null
+    }
+  ],
+  "allowancesCharges": [],
+  "lines": [
+    {
+      "id": "1",
+      "name": "Arbeitsgerüst",
+      "description": null,
+      "note": null,
+      "quantity": 1.0,
+      "unitCode": "EA",
+      "netPrice": 3508.77,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": 3508.77,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    }
+  ],
+  "attachments": []
+}

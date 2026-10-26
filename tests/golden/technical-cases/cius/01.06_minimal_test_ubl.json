@@ -1,0 +1,149 @@
+{
+  "number": "1234567",
+  "typeCode": "380",
+  "type": "invoice",
+  "isCreditNote": false,
+  "issueDate": "2018-04-13",
+  "dueDate": "2018-04-13",
+  "taxPointDate": null,
+  "currency": "EUR",
+  "taxCurrency": null,
+  "buyerReference": "90000000-03083-72",
+  "orderReference": null,
+  "salesOrderReference": null,
+  "contractReference": null,
+  "projectReference": null,
+  "buyerAccountingReference": null,
+  "invoicedObjectIdentifier": null,
+  "receivingAdviceReference": null,
+  "despatchAdviceReference": null,
+  "tenderReference": null,
+  "businessProcess": "urn:fdc:peppol.eu:2017:poacc:billing:01:1.0",
+  "precedingInvoices": [],
+  "deliveryDate": null,
+  "invoicingPeriod": null,
+  "notes": [],
+  "paymentTerms": null,
+  "payment": {
+    "meansCode": "58",
+    "meansText": null,
+    "remittanceInformation": null,
+    "accounts": [
+      {
+        "iban": "DE79000000001234567890",
+        "bic": null,
+        "name": null
+      }
+    ],
+    "card": null,
+    "directDebit": null
+  },
+  "seller": {
+    "name": "[Seller name]",
+    "tradingName": null,
+    "identifiers": [
+      {
+        "value": "9876543217894897438",
+        "scheme": null
+      }
+    ],
+    "legalRegistrationId": null,
+    "vatId": "ATU123456789",
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "rechnungsausgang@test.com",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": null,
+      "line2": null,
+      "line3": null,
+      "city": "[Seller city]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "Tim Tester",
+      "phone": "012 3456789",
+      "email": "tim.tester@test.com"
+    }
+  },
+  "buyer": {
+    "name": "[Buyer name]",
+    "tradingName": null,
+    "identifiers": [],
+    "legalRegistrationId": null,
+    "vatId": null,
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "rechnungseingang@test.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": null,
+      "line2": null,
+      "line3": null,
+      "city": "[Buyer city]",
+      "postalCode": "98765",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": null
+  },
+  "payee": null,
+  "taxRepresentative": null,
+  "delivery": null,
+  "totals": {
+    "lineNetTotal": 3986.34,
+    "allowanceTotal": null,
+    "chargeTotal": null,
+    "netTotal": 3986.34,
+    "vatTotal": 757.41,
+    "vatTotalTaxCurrency": null,
+    "grossTotal": 4743.75,
+    "prepaidAmount": null,
+    "roundingAmount": null,
+    "amountDue": 4743.75
+  },
+  "vatBreakdown": [
+    {
+      "categoryCode": "S",
+      "rate": 19.0,
+      "taxableAmount": 3986.34,
+      "taxAmount": 757.41,
+      "exemptionReason": null,
+      "exemptionReasonCode": null
+    }
+  ],
+  "allowancesCharges": [],
+  "lines": [
+    {
+      "id": "1",
+      "name": "Beratung",
+      "description": null,
+      "note": null,
+      "quantity": 30.0,
+      "unitCode": "XPP",
+      "netPrice": 132.878,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": 3986.34,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    }
+  ],
+  "attachments": []
+}

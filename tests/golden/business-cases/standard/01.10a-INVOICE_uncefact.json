@@ -1,0 +1,173 @@
+{
+  "number": "Rechnungsnummer",
+  "typeCode": "380",
+  "type": "invoice",
+  "isCreditNote": false,
+  "issueDate": "2016-06-27",
+  "dueDate": null,
+  "taxPointDate": null,
+  "currency": "EUR",
+  "taxCurrency": null,
+  "buyerReference": "04011000-12350-85",
+  "orderReference": null,
+  "salesOrderReference": "Auftragsnummer",
+  "contractReference": null,
+  "projectReference": null,
+  "buyerAccountingReference": null,
+  "invoicedObjectIdentifier": null,
+  "receivingAdviceReference": null,
+  "despatchAdviceReference": null,
+  "tenderReference": null,
+  "businessProcess": "urn:fdc:peppol.eu:2017:poacc:billing:01:1.0",
+  "precedingInvoices": [],
+  "deliveryDate": null,
+  "invoicingPeriod": null,
+  "notes": [
+    {
+      "subjectCode": "ADU",
+      "text": "Wir liefern Ihnen ausschließlich zu unseren allgemeinen Geschäftsbedingungen (Stand Februar 2013). Diese werden Ihnen jederzeit auf Wunsch übersandt. Bei Aufträgen, basierend auf öffentlichen Vergaben, gelten die ggf. vereinbarten abweichenden Liefer- und Zahungsbedingungen des Auftraggebers."
+    }
+  ],
+  "paymentTerms": "#SKONTO#TAGE=7#PROZENT=2.00#\n#SKONTO#TAGE=14#PROZENT=1.00#\n#SKONTO#TAGE=30#PROZENT=0.00#",
+  "payment": {
+    "meansCode": "58",
+    "meansText": null,
+    "remittanceInformation": null,
+    "accounts": [
+      {
+        "iban": "DE79000000001234567890",
+        "bic": null,
+        "name": null
+      },
+      {
+        "iban": "DE16000000002345678901",
+        "bic": null,
+        "name": null
+      }
+    ],
+    "card": null,
+    "directDebit": null
+  },
+  "seller": {
+    "name": "[Seller name]",
+    "tradingName": "[Seller trading name]",
+    "identifiers": [],
+    "legalRegistrationId": {
+      "value": "HRB 123456",
+      "scheme": null
+    },
+    "vatId": "DE123456789",
+    "taxNumber": "123/456/789",
+    "electronicAddress": {
+      "value": "seller@email.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Seller address line 1]",
+      "line2": null,
+      "line3": null,
+      "city": "[Seller city]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "Berater / Sachbearbeiter",
+      "phone": "+49(0)1234-0",
+      "email": "info@seller.de"
+    }
+  },
+  "buyer": {
+    "name": "[Buyer name]",
+    "tradingName": null,
+    "identifiers": [],
+    "legalRegistrationId": null,
+    "vatId": null,
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "buyer@info.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Buyer address line 1]",
+      "line2": null,
+      "line3": null,
+      "city": "[Buyer city]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "Ansprechpartner Käufer",
+      "phone": null,
+      "email": null
+    }
+  },
+  "payee": null,
+  "taxRepresentative": null,
+  "delivery": {
+    "partyName": "Außenstelle XY",
+    "locationId": null,
+    "address": {
+      "line1": "[Deliver to address line 1]",
+      "line2": null,
+      "line3": null,
+      "city": "[Deliver to city]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    }
+  },
+  "totals": {
+    "lineNetTotal": 2180.0,
+    "allowanceTotal": null,
+    "chargeTotal": null,
+    "netTotal": 2180.0,
+    "vatTotal": 414.2,
+    "vatTotalTaxCurrency": null,
+    "grossTotal": 2594.2,
+    "prepaidAmount": null,
+    "roundingAmount": null,
+    "amountDue": 2594.2
+  },
+  "vatBreakdown": [
+    {
+      "categoryCode": "S",
+      "rate": 19.0,
+      "taxableAmount": 2180.0,
+      "taxAmount": 414.2,
+      "exemptionReason": null,
+      "exemptionReasonCode": null
+    }
+  ],
+  "allowancesCharges": [],
+  "lines": [
+    {
+      "id": "1",
+      "name": "Drehstuhl",
+      "description": "Sitz: 10-301 blau, Rücken: 10-301 blau, ….",
+      "note": null,
+      "quantity": 10.0,
+      "unitCode": "XPP",
+      "netPrice": 218.0,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": 2180.0,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": "AL281982",
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    }
+  ],
+  "attachments": []
+}

@@ -1,0 +1,239 @@
+{
+  "number": "0000123456",
+  "typeCode": "380",
+  "type": "invoice",
+  "isCreditNote": false,
+  "issueDate": "2017-12-11",
+  "dueDate": "2018-01-10",
+  "taxPointDate": null,
+  "currency": "EUR",
+  "taxCurrency": null,
+  "buyerReference": "11002002-98765-14",
+  "orderReference": "10520",
+  "salesOrderReference": null,
+  "contractReference": "0000000752",
+  "projectReference": "Entwicklung System",
+  "buyerAccountingReference": null,
+  "invoicedObjectIdentifier": null,
+  "receivingAdviceReference": null,
+  "despatchAdviceReference": null,
+  "tenderReference": null,
+  "businessProcess": "urn:fdc:peppol.eu:2017:poacc:billing:01:1.0",
+  "precedingInvoices": [],
+  "deliveryDate": null,
+  "invoicingPeriod": null,
+  "notes": [
+    {
+      "subjectCode": "ADU",
+      "text": "[Invoice note]"
+    }
+  ],
+  "paymentTerms": "Bei Zahlungen binnen 14 Tagen, 2% Skonto",
+  "payment": {
+    "meansCode": "58",
+    "meansText": null,
+    "remittanceInformation": "0000123456",
+    "accounts": [
+      {
+        "iban": "DE79000000001234567890",
+        "bic": "[BIC]",
+        "name": "[Payment account name]"
+      }
+    ],
+    "card": null,
+    "directDebit": null
+  },
+  "seller": {
+    "name": "[Seller name]",
+    "tradingName": null,
+    "identifiers": [],
+    "legalRegistrationId": null,
+    "vatId": "DE123456789",
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "seller@email.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Seller street]",
+      "line2": null,
+      "line3": null,
+      "city": "[Seller city]",
+      "postalCode": "10623",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "[Seller contact person]",
+      "phone": "1234567890",
+      "email": "contact@seller.de"
+    }
+  },
+  "buyer": {
+    "name": "[Buyer name]",
+    "tradingName": null,
+    "identifiers": [],
+    "legalRegistrationId": null,
+    "vatId": null,
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "buyer@info.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Buyer street]",
+      "line2": null,
+      "line3": null,
+      "city": "[Buyer city]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "[Buyer contact person]",
+      "phone": null,
+      "email": "buyer@contact.com"
+    }
+  },
+  "payee": null,
+  "taxRepresentative": null,
+  "delivery": null,
+  "totals": {
+    "lineNetTotal": 8980.0,
+    "allowanceTotal": null,
+    "chargeTotal": null,
+    "netTotal": 8980.0,
+    "vatTotal": 1706.2,
+    "vatTotalTaxCurrency": null,
+    "grossTotal": 10686.2,
+    "prepaidAmount": null,
+    "roundingAmount": null,
+    "amountDue": 10686.2
+  },
+  "vatBreakdown": [
+    {
+      "categoryCode": "S",
+      "rate": 19.0,
+      "taxableAmount": 8980.0,
+      "taxAmount": 1706.2,
+      "exemptionReason": null,
+      "exemptionReasonCode": null
+    }
+  ],
+  "allowancesCharges": [],
+  "lines": [
+    {
+      "id": "0",
+      "name": "Anforderungsaufnahme",
+      "description": "Anforderungmanagament",
+      "note": null,
+      "quantity": 1.0,
+      "unitCode": "XPP",
+      "netPrice": 850.0,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": 850.0,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": "1034",
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    },
+    {
+      "id": "1",
+      "name": "Lastenheft",
+      "description": "Erstellung Lastenheft bis Abnahme",
+      "note": null,
+      "quantity": 1.0,
+      "unitCode": "XPP",
+      "netPrice": 2986.0,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": 2986.0,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": "1035",
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    },
+    {
+      "id": "2",
+      "name": "Pflichtenheft",
+      "description": "Erstellung Pflichtenheft bis Abnahme",
+      "note": null,
+      "quantity": 1.0,
+      "unitCode": "XPP",
+      "netPrice": 2344.0,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": 2344.0,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": "1036",
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    },
+    {
+      "id": "3",
+      "name": "Entwicklung",
+      "description": "Entwicklung System bis Implementierung",
+      "note": null,
+      "quantity": 1.0,
+      "unitCode": "XPP",
+      "netPrice": 2800.0,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": 2800.0,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": "1037",
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    }
+  ],
+  "attachments": [
+    {
+      "id": "01_15_Anhang_01.pdf",
+      "description": "Aufschlüsselung der einzelnen Leistungspositionen",
+      "fileName": "01_15_Anhang_01.pdf",
+      "mimeType": "application/pdf",
+      "uri": null
+    }
+  ]
+}

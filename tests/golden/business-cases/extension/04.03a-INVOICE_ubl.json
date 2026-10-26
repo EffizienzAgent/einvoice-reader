@@ -1,0 +1,234 @@
+{
+  "number": "12345",
+  "typeCode": "877",
+  "type": "invoice",
+  "isCreditNote": false,
+  "issueDate": "2019-05-15",
+  "dueDate": null,
+  "taxPointDate": null,
+  "currency": "EUR",
+  "taxCurrency": null,
+  "buyerReference": "12345678-12345-83",
+  "orderReference": "123",
+  "salesOrderReference": "Bestell-/Auftrags.-Nr. XXX",
+  "contractReference": null,
+  "projectReference": null,
+  "buyerAccountingReference": null,
+  "invoicedObjectIdentifier": null,
+  "receivingAdviceReference": null,
+  "despatchAdviceReference": null,
+  "tenderReference": null,
+  "businessProcess": "urn:fdc:peppol.eu:2017:poacc:billing:01:1.0",
+  "precedingInvoices": [
+    {
+      "number": "1/10416097",
+      "issueDate": null
+    },
+    {
+      "number": "24/9999999",
+      "issueDate": null
+    },
+    {
+      "number": "25/9999999",
+      "issueDate": null
+    }
+  ],
+  "deliveryDate": null,
+  "invoicingPeriod": {
+    "start": "2019-02-01",
+    "end": "2019-05-07"
+  },
+  "notes": [
+    {
+      "subjectCode": null,
+      "text": "Bereits gezahlte Rechnungen zur Schlussrechnung (insgesamt bereits gezahlter\n    Brutto-Betrag: 1.064.317,34): Zahlung vom 23.01.2020 zur Rg. Nr. 1/10416097; 19,00 % MwSt;\n    Netto-Betrag 5.444,00; MwSt.-Betrag 1.034,36; Brutto-Betrag 6.478,36 Zahlung vom 23.06.2020 zur\n    Rg. Nr. 24/9999999; 19,00 % MwSt; Netto-Betrag 788.940,32; MwSt.-Betrag 149.898,66;\n    Brutto-Betrag 938.838,98 Zahlung vom 23.06.2020 zur Rg. Nr. 25/9999999; 19,00 % MwSt;\n    Netto-Betrag 100.000,00; MwSt.-Betrag 19.000,00; Brutto-Betrag 119.000,00"
+    },
+    {
+      "subjectCode": null,
+      "text": "Abrufnummer: XXXX"
+    },
+    {
+      "subjectCode": null,
+      "text": "Kettennummer: YYYYY"
+    },
+    {
+      "subjectCode": null,
+      "text": "Kostenträger: 01 Leistungen Bund"
+    }
+  ],
+  "paymentTerms": "Zahlbar innerhalb 14 Tagen nach Erhalt der Rechnung.",
+  "payment": {
+    "meansCode": "31",
+    "meansText": null,
+    "remittanceInformation": null,
+    "accounts": [
+      {
+        "iban": "DE79000000001234567890",
+        "bic": null,
+        "name": null
+      }
+    ],
+    "card": null,
+    "directDebit": null
+  },
+  "seller": {
+    "name": "M. Meier Handwerk GbR",
+    "tradingName": "M. Meier",
+    "identifiers": [],
+    "legalRegistrationId": {
+      "value": "1122334455",
+      "scheme": null
+    },
+    "vatId": "DE/12/345/67890",
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "seller@email.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "Hauptstraße 2",
+      "line2": null,
+      "line3": null,
+      "city": "Musterstadt",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "M. Meier Handwerk GbR",
+      "phone": "010/12345",
+      "email": "info@m-meier.de"
+    }
+  },
+  "buyer": {
+    "name": "Beispielkunde",
+    "tradingName": null,
+    "identifiers": [
+      {
+        "value": "345LA5324",
+        "scheme": null
+      }
+    ],
+    "legalRegistrationId": null,
+    "vatId": null,
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "buyer@info.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "Dorfplatz 3",
+      "line2": null,
+      "line3": null,
+      "city": "Musterort",
+      "postalCode": "54321",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": null
+  },
+  "payee": null,
+  "taxRepresentative": null,
+  "delivery": null,
+  "totals": {
+    "lineNetTotal": 21165166.39,
+    "allowanceTotal": 989815.47,
+    "chargeTotal": null,
+    "netTotal": 20175350.92,
+    "vatTotal": 3933072.07,
+    "vatTotalTaxCurrency": null,
+    "grossTotal": 24108422.99,
+    "prepaidAmount": 1064317.34,
+    "roundingAmount": null,
+    "amountDue": 23044105.65
+  },
+  "vatBreakdown": [
+    {
+      "categoryCode": "S",
+      "rate": 19.0,
+      "taxableAmount": 20700379.33,
+      "taxAmount": 3933072.07,
+      "exemptionReason": null,
+      "exemptionReasonCode": null
+    },
+    {
+      "categoryCode": "E",
+      "rate": 0.0,
+      "taxableAmount": -525028.41,
+      "taxAmount": 0.0,
+      "exemptionReason": "Ausnahmegrund",
+      "exemptionReasonCode": null
+    }
+  ],
+  "allowancesCharges": [
+    {
+      "isCharge": false,
+      "amount": 255384.19,
+      "baseAmount": 20430735.11,
+      "percent": 1.25,
+      "reason": "Standard - Gewährleistungseinbehalt auf Rechnungsbetrag\n      (Leistungssumme abzgl. Bauumlage abzgl. Bauleistungsversicherung)",
+      "reasonCode": "104",
+      "vatCategoryCode": "E",
+      "vatRate": 0.0
+    },
+    {
+      "isCharge": false,
+      "amount": 41483.73,
+      "baseAmount": 20741863.06,
+      "percent": 0.2,
+      "reason": "Standard - Bauumlage auf die\n      Leistungssumme",
+      "reasonCode": "104",
+      "vatCategoryCode": "S",
+      "vatRate": 19.0
+    },
+    {
+      "isCharge": false,
+      "amount": 269644.22,
+      "baseAmount": 20741863.06,
+      "percent": 1.3,
+      "reason": "Standard - Bauleistungsversicherung auf die\n      Leistungssumme",
+      "reasonCode": "104",
+      "vatCategoryCode": "E",
+      "vatRate": 0.0
+    },
+    {
+      "isCharge": false,
+      "amount": 423303.33,
+      "baseAmount": 21165166.39,
+      "percent": 2.0,
+      "reason": "Nachlass",
+      "reasonCode": "104",
+      "vatCategoryCode": "S",
+      "vatRate": 19.0
+    }
+  ],
+  "lines": [
+    {
+      "id": "1",
+      "name": "Leistungssumme",
+      "description": null,
+      "note": null,
+      "quantity": 1.0,
+      "unitCode": "XPP",
+      "netPrice": 21165166.39,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": 21165166.39,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    }
+  ],
+  "attachments": []
+}

@@ -1,0 +1,169 @@
+{
+  "number": "18383",
+  "typeCode": "380",
+  "type": "invoice",
+  "isCreditNote": false,
+  "issueDate": "2020-11-27",
+  "dueDate": "2020-12-27",
+  "taxPointDate": null,
+  "currency": "EUR",
+  "taxCurrency": null,
+  "buyerReference": "04011000-12349-88",
+  "orderReference": null,
+  "salesOrderReference": null,
+  "contractReference": null,
+  "projectReference": null,
+  "buyerAccountingReference": null,
+  "invoicedObjectIdentifier": null,
+  "receivingAdviceReference": null,
+  "despatchAdviceReference": null,
+  "tenderReference": null,
+  "businessProcess": "urn:fdc:peppol.eu:2017:poacc:billing:01:1.0",
+  "precedingInvoices": [],
+  "deliveryDate": "2020-11-23",
+  "invoicingPeriod": null,
+  "notes": [],
+  "paymentTerms": "10 Tage 3% Skonto, 30 Tage netto",
+  "payment": {
+    "meansCode": "58",
+    "meansText": "Rechnung",
+    "remittanceInformation": null,
+    "accounts": [
+      {
+        "iban": "DE79000000001234567890",
+        "bic": "DRESDEFFXXX",
+        "name": "Mustermann GmbH"
+      }
+    ],
+    "card": null,
+    "directDebit": null
+  },
+  "seller": {
+    "name": "Mustermann GmbH",
+    "tradingName": null,
+    "identifiers": [
+      {
+        "value": "116078",
+        "scheme": null
+      }
+    ],
+    "legalRegistrationId": null,
+    "vatId": "DE152338654",
+    "taxNumber": "04523149435",
+    "electronicAddress": {
+      "value": "seller@email.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "Musterstrasse 4",
+      "line2": null,
+      "line3": null,
+      "city": "Frankfurt am Main",
+      "postalCode": "60388",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "Wolfgang Muster",
+      "phone": "069-12335",
+      "email": "mail@muster.de"
+    }
+  },
+  "buyer": {
+    "name": "DB Station&Service AG RB Mitte",
+    "tradingName": null,
+    "identifiers": [
+      {
+        "value": "10099",
+        "scheme": null
+      }
+    ],
+    "legalRegistrationId": null,
+    "vatId": "DE152138634",
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "buyer@info.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "Musterweg 1",
+      "line2": null,
+      "line3": null,
+      "city": "Berlin",
+      "postalCode": "10115",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "Klaus Koffer",
+      "phone": null,
+      "email": null
+    }
+  },
+  "payee": null,
+  "taxRepresentative": null,
+  "delivery": null,
+  "totals": {
+    "lineNetTotal": 208.0,
+    "allowanceTotal": 0.0,
+    "chargeTotal": 25.0,
+    "netTotal": 233.0,
+    "vatTotal": 0.0,
+    "vatTotalTaxCurrency": null,
+    "grossTotal": 233.0,
+    "prepaidAmount": null,
+    "roundingAmount": null,
+    "amountDue": 233.0
+  },
+  "vatBreakdown": [
+    {
+      "categoryCode": "AE",
+      "rate": 0.0,
+      "taxableAmount": 233.0,
+      "taxAmount": 0.0,
+      "exemptionReason": "als gemeinnützig anerkannt",
+      "exemptionReasonCode": null
+    }
+  ],
+  "allowancesCharges": [
+    {
+      "isCharge": true,
+      "amount": 25.0,
+      "baseAmount": null,
+      "percent": null,
+      "reason": "Lieferpauschale",
+      "reasonCode": null,
+      "vatCategoryCode": "AE",
+      "vatRate": 0.0
+    }
+  ],
+  "lines": [
+    {
+      "id": "1",
+      "name": "Tür Instandsetzung",
+      "description": null,
+      "note": null,
+      "quantity": 4.0,
+      "unitCode": "HUR",
+      "netPrice": 52.0,
+      "grossPrice": 62.0,
+      "priceBaseQuantity": null,
+      "netAmount": 208.0,
+      "vatCategoryCode": "AE",
+      "vatRate": 0.0,
+      "sellerItemId": "1",
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    }
+  ],
+  "attachments": []
+}

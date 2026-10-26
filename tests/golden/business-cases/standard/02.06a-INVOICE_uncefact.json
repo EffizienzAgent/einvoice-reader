@@ -1,0 +1,198 @@
+{
+  "number": "1234567",
+  "typeCode": "380",
+  "type": "invoice",
+  "isCreditNote": false,
+  "issueDate": "2019-08-20",
+  "dueDate": "2019-08-29",
+  "taxPointDate": null,
+  "currency": "EUR",
+  "taxCurrency": null,
+  "buyerReference": "90000000-03083-72",
+  "orderReference": null,
+  "salesOrderReference": null,
+  "contractReference": "0000000752",
+  "projectReference": null,
+  "buyerAccountingReference": null,
+  "invoicedObjectIdentifier": null,
+  "receivingAdviceReference": null,
+  "despatchAdviceReference": null,
+  "tenderReference": null,
+  "businessProcess": "urn:fdc:peppol.eu:2017:poacc:billing:01:1.0",
+  "precedingInvoices": [],
+  "deliveryDate": null,
+  "invoicingPeriod": null,
+  "notes": [],
+  "paymentTerms": "Bitte überweisen Sie bis zum …",
+  "payment": {
+    "meansCode": "58",
+    "meansText": null,
+    "remittanceInformation": "Deb. 12345 / Fact. 9876543",
+    "accounts": [
+      {
+        "iban": "DE79000000001234567890",
+        "bic": "[BIC]",
+        "name": "[Payment account name]"
+      }
+    ],
+    "card": null,
+    "directDebit": null
+  },
+  "seller": {
+    "name": "[Seller name]",
+    "tradingName": "[Seller trading name]",
+    "identifiers": [
+      {
+        "value": "2428600711948",
+        "scheme": "0088"
+      }
+    ],
+    "legalRegistrationId": {
+      "value": "3688088306671",
+      "scheme": "0088"
+    },
+    "vatId": "ATU123456789",
+    "taxNumber": "123/456/789",
+    "electronicAddress": {
+      "value": "rechnungsausgang@test.com",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Seller address line 1]",
+      "line2": "[Seller address line 2]",
+      "line3": null,
+      "city": "[Seller city]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "Tim Tester",
+      "phone": "012 3456789",
+      "email": "tim.tester@test.com"
+    }
+  },
+  "buyer": {
+    "name": "[Buyer name]",
+    "tradingName": "[Buyer trading name]",
+    "identifiers": [
+      {
+        "value": "138",
+        "scheme": null
+      }
+    ],
+    "legalRegistrationId": {
+      "value": "90000000-03083-72",
+      "scheme": "0204"
+    },
+    "vatId": "DE12345ABC",
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "rechnungseingang@test.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Buyer address line 1]",
+      "line2": "[Buyer address line 2]",
+      "line3": "[Buyer address line 3]",
+      "city": "[Buyer city]",
+      "postalCode": "98765",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "Tina Tester",
+      "phone": "0800 123456",
+      "email": "tester@test.de"
+    }
+  },
+  "payee": null,
+  "taxRepresentative": null,
+  "delivery": null,
+  "totals": {
+    "lineNetTotal": 10.95,
+    "allowanceTotal": null,
+    "chargeTotal": null,
+    "netTotal": 10.95,
+    "vatTotal": 2.08,
+    "vatTotalTaxCurrency": null,
+    "grossTotal": 13.03,
+    "prepaidAmount": null,
+    "roundingAmount": null,
+    "amountDue": 13.03
+  },
+  "vatBreakdown": [
+    {
+      "categoryCode": "S",
+      "rate": 19.0,
+      "taxableAmount": 10.95,
+      "taxAmount": 2.08,
+      "exemptionReason": null,
+      "exemptionReasonCode": null
+    }
+  ],
+  "allowancesCharges": [],
+  "lines": [
+    {
+      "id": "1",
+      "name": "Abschlag Monat",
+      "description": null,
+      "note": null,
+      "quantity": 1.0,
+      "unitCode": "XPP",
+      "netPrice": 29.95,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": 29.95,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    },
+    {
+      "id": "2",
+      "name": "Minderleistungen Produkt 2 Vormonat",
+      "description": null,
+      "note": null,
+      "quantity": -19.0,
+      "unitCode": "XPP",
+      "netPrice": 1.0,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": -19.0,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    }
+  ],
+  "attachments": [
+    {
+      "id": "01_15_Anhang_01.pdf",
+      "description": "Aufschlüsselung der einzelnen Leistungspositionen",
+      "fileName": "01_15_Anhang_01.pdf",
+      "mimeType": "application/pdf",
+      "uri": null
+    }
+  ]
+}

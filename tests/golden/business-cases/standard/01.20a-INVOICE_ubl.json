@@ -1,0 +1,193 @@
+{
+  "number": "1234567890",
+  "typeCode": "389",
+  "type": "self_billed",
+  "isCreditNote": false,
+  "issueDate": "2021-01-25",
+  "dueDate": "2021-02-04",
+  "taxPointDate": null,
+  "currency": "EUR",
+  "taxCurrency": null,
+  "buyerReference": "1234567890-54321-40",
+  "orderReference": "Bestellung XRechnung",
+  "salesOrderReference": null,
+  "contractReference": null,
+  "projectReference": null,
+  "buyerAccountingReference": null,
+  "invoicedObjectIdentifier": null,
+  "receivingAdviceReference": null,
+  "despatchAdviceReference": null,
+  "tenderReference": null,
+  "businessProcess": "urn:fdc:peppol.eu:2017:poacc:billing:01:1.0",
+  "precedingInvoices": [],
+  "deliveryDate": "2021-01-25",
+  "invoicingPeriod": null,
+  "notes": [
+    {
+      "subjectCode": "REG",
+      "text": "Betriebsstätte"
+    }
+  ],
+  "paymentTerms": "Zahlbar unter Angabe der Rechungs- und Debitornummer sofort netto Kasse; fällig zum 04.02.2021 ohne Abzug",
+  "payment": {
+    "meansCode": "42",
+    "meansText": "Bank transfer",
+    "remittanceInformation": "1234567890",
+    "accounts": [
+      {
+        "iban": "DE79000000001234567890",
+        "bic": "PBNKDEFF",
+        "name": "Postbank Düsseldorf"
+      }
+    ],
+    "card": null,
+    "directDebit": null
+  },
+  "seller": {
+    "name": "Betriebsstätte",
+    "tradingName": null,
+    "identifiers": [],
+    "legalRegistrationId": null,
+    "vatId": "DE123456789",
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "seller@email.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Seller street]",
+      "line2": null,
+      "line3": null,
+      "city": "[Seller city]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "Reimund Kann",
+      "phone": "0123456789",
+      "email": "test@test.de"
+    }
+  },
+  "buyer": {
+    "name": "Kunde 1",
+    "tradingName": null,
+    "identifiers": [],
+    "legalRegistrationId": null,
+    "vatId": "DE987654321",
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "buyer@info.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Street]",
+      "line2": null,
+      "line3": null,
+      "city": "[City]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": null
+  },
+  "payee": null,
+  "taxRepresentative": null,
+  "delivery": {
+    "partyName": "[ShipToTradeParty]",
+    "locationId": null,
+    "address": {
+      "line1": "[Street]",
+      "line2": null,
+      "line3": null,
+      "city": "[City]",
+      "postalCode": "54321",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    }
+  },
+  "totals": {
+    "lineNetTotal": 300.0,
+    "allowanceTotal": null,
+    "chargeTotal": null,
+    "netTotal": 300.0,
+    "vatTotal": 57.0,
+    "vatTotalTaxCurrency": null,
+    "grossTotal": 357.0,
+    "prepaidAmount": null,
+    "roundingAmount": null,
+    "amountDue": 357.0
+  },
+  "vatBreakdown": [
+    {
+      "categoryCode": "S",
+      "rate": 19.0,
+      "taxableAmount": 300.0,
+      "taxAmount": 57.0,
+      "exemptionReason": null,
+      "exemptionReasonCode": null
+    }
+  ],
+  "allowancesCharges": [],
+  "lines": [
+    {
+      "id": "1",
+      "name": "Behältermiete",
+      "description": null,
+      "note": null,
+      "quantity": -1.0,
+      "unitCode": "C62",
+      "netPrice": 100.0,
+      "grossPrice": 110.0,
+      "priceBaseQuantity": 1.0,
+      "netAmount": -100.0,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": {
+        "start": "2021-01-25",
+        "end": "2021-01-25"
+      },
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    },
+    {
+      "id": "2",
+      "name": "Entsorgung",
+      "description": "Ersatztext bei Entsorgung",
+      "note": null,
+      "quantity": 4.0,
+      "unitCode": "TNE",
+      "netPrice": 100.0,
+      "grossPrice": 110.0,
+      "priceBaseQuantity": 1.0,
+      "netAmount": 400.0,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": {
+        "start": "2021-01-25",
+        "end": "2021-01-25"
+      },
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    }
+  ],
+  "attachments": []
+}

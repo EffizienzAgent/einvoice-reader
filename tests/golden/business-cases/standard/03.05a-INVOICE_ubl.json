@@ -1,0 +1,224 @@
+{
+  "number": "123456789",
+  "typeCode": "380",
+  "type": "invoice",
+  "isCreditNote": false,
+  "issueDate": "2018-06-05",
+  "dueDate": "2019-03-14",
+  "taxPointDate": null,
+  "currency": "EUR",
+  "taxCurrency": null,
+  "buyerReference": "90000000-03083-72",
+  "orderReference": null,
+  "salesOrderReference": null,
+  "contractReference": "CR123456",
+  "projectReference": null,
+  "buyerAccountingReference": null,
+  "invoicedObjectIdentifier": null,
+  "receivingAdviceReference": null,
+  "despatchAdviceReference": null,
+  "tenderReference": null,
+  "businessProcess": "urn:fdc:peppol.eu:2017:poacc:billing:01:1.0",
+  "precedingInvoices": [],
+  "deliveryDate": null,
+  "invoicingPeriod": {
+    "start": "2016-01-01",
+    "end": "2016-01-31"
+  },
+  "notes": [],
+  "paymentTerms": "Dieses Guthaben werden wir auf Ihr Konto erstatten.",
+  "payment": {
+    "meansCode": "59",
+    "meansText": null,
+    "remittanceInformation": null,
+    "accounts": [],
+    "card": null,
+    "directDebit": {
+      "mandateReference": "[Mandate reference identifier]",
+      "creditorId": "[Bank assigned creditor identifier]",
+      "debitedAccount": "DE79000000001234567890"
+    }
+  },
+  "seller": {
+    "name": "[Seller name]",
+    "tradingName": "[Seller trading name]",
+    "identifiers": [
+      {
+        "value": "[Bank assigned creditor identifier]",
+        "scheme": "SEPA"
+      }
+    ],
+    "legalRegistrationId": null,
+    "vatId": "ATU123456789",
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "seller@email.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Seller address line 1]",
+      "line2": null,
+      "line3": null,
+      "city": "[Seller city]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "Kundencenter",
+      "phone": "0800-12345678",
+      "email": "kundencenter@sellder.de"
+    }
+  },
+  "buyer": {
+    "name": "[Buyer name]",
+    "tradingName": "[Buyer trading name]",
+    "identifiers": [
+      {
+        "value": "BI123456",
+        "scheme": null
+      }
+    ],
+    "legalRegistrationId": null,
+    "vatId": null,
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "buyer@info.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Buyer address line 1]",
+      "line2": null,
+      "line3": null,
+      "city": "[Buyer city]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": null
+  },
+  "payee": null,
+  "taxRepresentative": null,
+  "delivery": null,
+  "totals": {
+    "lineNetTotal": 44682.01,
+    "allowanceTotal": null,
+    "chargeTotal": null,
+    "netTotal": 44682.01,
+    "vatTotal": 8489.58,
+    "vatTotalTaxCurrency": null,
+    "grossTotal": 53171.59,
+    "prepaidAmount": null,
+    "roundingAmount": null,
+    "amountDue": 53171.59
+  },
+  "vatBreakdown": [
+    {
+      "categoryCode": "S",
+      "rate": 19.0,
+      "taxableAmount": 44682.01,
+      "taxAmount": 8489.58,
+      "exemptionReason": null,
+      "exemptionReasonCode": null
+    }
+  ],
+  "allowancesCharges": [],
+  "lines": [
+    {
+      "id": "1",
+      "name": "Messpreis",
+      "description": null,
+      "note": "Messpreis",
+      "quantity": 31.0,
+      "unitCode": "DAY",
+      "netPrice": 386.52,
+      "grossPrice": null,
+      "priceBaseQuantity": 366.0,
+      "netAmount": 32.74,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": {
+        "start": "2016-01-01",
+        "end": "2016-01-31"
+      },
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    },
+    {
+      "id": "2",
+      "name": "Grundpreis",
+      "description": null,
+      "note": "Grundpreis",
+      "quantity": 2100.0,
+      "unitCode": "KWT",
+      "netPrice": 3.2916,
+      "grossPrice": null,
+      "priceBaseQuantity": 1.0,
+      "netAmount": 6912.37,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": {
+        "start": "2016-01-01",
+        "end": "2016-01-31"
+      },
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    },
+    {
+      "id": "3",
+      "name": "Arbeitspreis",
+      "description": null,
+      "note": "Arbeitspreis",
+      "quantity": 616290.0,
+      "unitCode": "KWH",
+      "netPrice": 0.061232374,
+      "grossPrice": null,
+      "priceBaseQuantity": 1.0,
+      "netAmount": 37736.9,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": {
+        "start": "2016-01-01",
+        "end": "2016-01-31"
+      },
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    }
+  ],
+  "attachments": [
+    {
+      "id": "01_15_Anhang_01.pdf",
+      "description": "Aufschlüsselung der einzelnen Leistungspositionen",
+      "fileName": "01_15_Anhang_01.pdf",
+      "mimeType": "application/pdf",
+      "uri": null
+    }
+  ]
+}

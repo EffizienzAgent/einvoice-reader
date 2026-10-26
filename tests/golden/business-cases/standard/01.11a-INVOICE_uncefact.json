@@ -1,0 +1,209 @@
+{
+  "number": "Rechnungsnummer",
+  "typeCode": "380",
+  "type": "invoice",
+  "isCreditNote": false,
+  "issueDate": "2016-02-23",
+  "dueDate": "2016-03-08",
+  "taxPointDate": null,
+  "currency": "EUR",
+  "taxCurrency": null,
+  "buyerReference": "04011000-12352-79",
+  "orderReference": null,
+  "salesOrderReference": "Auftragsnummer",
+  "contractReference": null,
+  "projectReference": null,
+  "buyerAccountingReference": null,
+  "invoicedObjectIdentifier": null,
+  "receivingAdviceReference": null,
+  "despatchAdviceReference": null,
+  "tenderReference": null,
+  "businessProcess": "urn:fdc:peppol.eu:2017:poacc:billing:01:1.0",
+  "precedingInvoices": [],
+  "deliveryDate": null,
+  "invoicingPeriod": null,
+  "notes": [],
+  "paymentTerms": null,
+  "payment": {
+    "meansCode": "58",
+    "meansText": null,
+    "remittanceInformation": null,
+    "accounts": [
+      {
+        "iban": "DE79000000001234567890",
+        "bic": null,
+        "name": null
+      },
+      {
+        "iban": "DE16000000002345678901",
+        "bic": null,
+        "name": null
+      },
+      {
+        "iban": "DE03000000003456789012",
+        "bic": null,
+        "name": null
+      }
+    ],
+    "card": null,
+    "directDebit": null
+  },
+  "seller": {
+    "name": "[Seller name]",
+    "tradingName": "[Seller trading name]",
+    "identifiers": [],
+    "legalRegistrationId": {
+      "value": "HRB 123",
+      "scheme": null
+    },
+    "vatId": "DE123456789",
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "seller@email.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Seller address line 1]",
+      "line2": null,
+      "line3": null,
+      "city": "[Seller city]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "Auskunft erteilt Ihnen",
+      "phone": "1234567890",
+      "email": "seller@test.de"
+    }
+  },
+  "buyer": {
+    "name": "[Buyer name]",
+    "tradingName": null,
+    "identifiers": [],
+    "legalRegistrationId": null,
+    "vatId": null,
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "buyer@info.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Buyer address line 1]",
+      "line2": null,
+      "line3": null,
+      "city": "[Buyer city]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": null
+  },
+  "payee": null,
+  "taxRepresentative": null,
+  "delivery": null,
+  "totals": {
+    "lineNetTotal": 234.77,
+    "allowanceTotal": null,
+    "chargeTotal": null,
+    "netTotal": 234.77,
+    "vatTotal": 44.61,
+    "vatTotalTaxCurrency": null,
+    "grossTotal": 279.38,
+    "prepaidAmount": null,
+    "roundingAmount": null,
+    "amountDue": 279.38
+  },
+  "vatBreakdown": [
+    {
+      "categoryCode": "S",
+      "rate": 19.0,
+      "taxableAmount": 234.77,
+      "taxAmount": 44.61,
+      "exemptionReason": null,
+      "exemptionReasonCode": null
+    }
+  ],
+  "allowancesCharges": [],
+  "lines": [
+    {
+      "id": "0010",
+      "name": "Huawei E5573 Mobiler 4G Hotspot sw",
+      "description": null,
+      "note": null,
+      "quantity": 3.0,
+      "unitCode": "XPP",
+      "netPrice": 71.42,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": 214.26,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": "CON-1401888",
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    },
+    {
+      "id": "0020",
+      "name": "Beschaffungspauschale",
+      "description": null,
+      "note": null,
+      "quantity": 1.0,
+      "unitCode": "XPP",
+      "netPrice": 10.71,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": 10.71,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": "51001",
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    },
+    {
+      "id": "0030",
+      "name": "Lieferkosten",
+      "description": null,
+      "note": null,
+      "quantity": 1.0,
+      "unitCode": "XPP",
+      "netPrice": 9.8,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": 9.8,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": "51010",
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    }
+  ],
+  "attachments": []
+}

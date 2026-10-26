@@ -1,0 +1,181 @@
+{
+  "number": "12345",
+  "typeCode": "380",
+  "type": "invoice",
+  "isCreditNote": false,
+  "issueDate": "2019-05-15",
+  "dueDate": null,
+  "taxPointDate": null,
+  "currency": "EUR",
+  "taxCurrency": null,
+  "buyerReference": "12345678-12345-83",
+  "orderReference": "123",
+  "salesOrderReference": null,
+  "contractReference": null,
+  "projectReference": null,
+  "buyerAccountingReference": null,
+  "invoicedObjectIdentifier": null,
+  "receivingAdviceReference": null,
+  "despatchAdviceReference": null,
+  "tenderReference": null,
+  "businessProcess": "urn:fdc:peppol.eu:2017:poacc:billing:01:1.0",
+  "precedingInvoices": [],
+  "deliveryDate": null,
+  "invoicingPeriod": {
+    "start": "2019-02-01",
+    "end": "2019-05-07"
+  },
+  "notes": [],
+  "paymentTerms": "Zahlbar innerhalb 14 Tagen nach Erhalt der Rechnung.",
+  "payment": {
+    "meansCode": "31",
+    "meansText": null,
+    "remittanceInformation": null,
+    "accounts": [
+      {
+        "iban": "DE79000000001234567890",
+        "bic": null,
+        "name": null
+      }
+    ],
+    "card": null,
+    "directDebit": null
+  },
+  "seller": {
+    "name": "M. Meier Handwerk GbR",
+    "tradingName": "M. Meier",
+    "identifiers": [],
+    "legalRegistrationId": {
+      "value": "1122334455",
+      "scheme": null
+    },
+    "vatId": "DE/12/345/67890",
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "seller@email.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "Hauptstraße 2",
+      "line2": null,
+      "line3": null,
+      "city": "Musterstadt",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "M. Meier Handwerk GbR",
+      "phone": "010/12345",
+      "email": "info@m-meier.de"
+    }
+  },
+  "buyer": {
+    "name": "Beispielkunde",
+    "tradingName": null,
+    "identifiers": [
+      {
+        "value": "345LA5324",
+        "scheme": null
+      }
+    ],
+    "legalRegistrationId": null,
+    "vatId": null,
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "buyer@info.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "Dorfplatz 3",
+      "line2": null,
+      "line3": null,
+      "city": "Musterort",
+      "postalCode": "54321",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": null
+  },
+  "payee": null,
+  "taxRepresentative": null,
+  "delivery": null,
+  "totals": {
+    "lineNetTotal": 12536.84,
+    "allowanceTotal": null,
+    "chargeTotal": null,
+    "netTotal": 12536.84,
+    "vatTotal": 2382.0,
+    "vatTotalTaxCurrency": null,
+    "grossTotal": 14918.84,
+    "prepaidAmount": 10000.0,
+    "roundingAmount": null,
+    "amountDue": 4918.84
+  },
+  "vatBreakdown": [
+    {
+      "categoryCode": "S",
+      "rate": 19.0,
+      "taxableAmount": 12536.84,
+      "taxAmount": 2382.0,
+      "exemptionReason": null,
+      "exemptionReasonCode": null
+    }
+  ],
+  "allowancesCharges": [],
+  "lines": [
+    {
+      "id": "1",
+      "name": "Sanitär und Zubehör",
+      "description": null,
+      "note": null,
+      "quantity": 1.0,
+      "unitCode": "XPP",
+      "netPrice": 818.04,
+      "grossPrice": null,
+      "priceBaseQuantity": 1.0,
+      "netAmount": 818.04,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    },
+    {
+      "id": "2",
+      "name": "Heizung und Zubehör",
+      "description": null,
+      "note": null,
+      "quantity": 1.0,
+      "unitCode": "XPP",
+      "netPrice": 11718.8,
+      "grossPrice": null,
+      "priceBaseQuantity": 1.0,
+      "netAmount": 11718.8,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    }
+  ],
+  "attachments": []
+}

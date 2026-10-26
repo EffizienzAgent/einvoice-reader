@@ -1,0 +1,9 @@
+73f2898ad26e1fcb9ec4649cdf8466ea0bda47644b7c12efc10a703bdfb94a9f  ./LICENSE
+fc22ec1dcd8bee4636a395fb332e2308cde870fb3fdc71a2e260b919877cdef5  ./LICENSE-EUPL-1.2-CEN.txt
+aaba5a88c905a8d421877698396755abb3b9563b7655bfb02b76d634c9e861e4  ./NOTICE
+0911e927f13f9ae2cdc7f973643f27bf0ad3c5da02483c04a5b8a47eb4822199  ./resources/cii/16b/xsl/EN16931-CII-validation.xsl
+759f2d2e830c7fd1d5a6e8b4f61e5dbafc7a7805862c4ae1c749eeac6adde698  ./resources/ubl/2.1/xsl/EN16931-UBL-validation.xsl
+ec54f662803a87f527ec606d1320bc404f1657a848af6a76f37f32905e4aac40  ./resources/xrechnung/3.0.2/xsl/XRechnung-CII-validation.xsl
+e32d831668facbbd5136cc0119bf1dd6f92ac20738aa3b3f021586f5a305c738  ./resources/xrechnung/3.0.2/xsl/XRechnung-UBL-validation.xsl
+3e8161a39dfaa6aea4d990b279aab848be4f4c6169e820f354a159bda7693fb0  ./scenarios.xml
+1c46128cd2183b44335854dad3d770df5aeea7aae86efa3136787d87fb03604e  ./VERSION

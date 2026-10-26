@@ -1,0 +1,157 @@
+{
+  "number": "R123456789",
+  "typeCode": "380",
+  "type": "invoice",
+  "isCreditNote": false,
+  "issueDate": "2016-01-18",
+  "dueDate": "2016-02-01",
+  "taxPointDate": null,
+  "currency": "EUR",
+  "taxCurrency": null,
+  "buyerReference": "04011000-12349-88",
+  "orderReference": null,
+  "salesOrderReference": "A123456789",
+  "contractReference": "V876543210",
+  "projectReference": null,
+  "buyerAccountingReference": null,
+  "invoicedObjectIdentifier": null,
+  "receivingAdviceReference": null,
+  "despatchAdviceReference": null,
+  "tenderReference": null,
+  "businessProcess": "urn:fdc:peppol.eu:2017:poacc:billing:01:1.0",
+  "precedingInvoices": [],
+  "deliveryDate": null,
+  "invoicingPeriod": null,
+  "notes": [],
+  "paymentTerms": "Die Zahlung wird als Teilleistung monatl. Erbracht und ist monatl. zum letzten Werktag fällig. …",
+  "payment": {
+    "meansCode": "58",
+    "meansText": null,
+    "remittanceInformation": null,
+    "accounts": [
+      {
+        "iban": "DE79000000001234567890",
+        "bic": null,
+        "name": null
+      },
+      {
+        "iban": "DE16000000002345678901",
+        "bic": null,
+        "name": null
+      },
+      {
+        "iban": "DE03000000003456789012",
+        "bic": null,
+        "name": null
+      }
+    ],
+    "card": null,
+    "directDebit": null
+  },
+  "seller": {
+    "name": "[Seller name]",
+    "tradingName": "[Seller trading name]",
+    "identifiers": [],
+    "legalRegistrationId": {
+      "value": "HRB 123",
+      "scheme": null
+    },
+    "vatId": "DE123456789",
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "seller@email.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "Postfach 123456",
+      "line2": null,
+      "line3": null,
+      "city": "[Seller city]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "Auskunft erteilt Ihnen",
+      "phone": "1234567890",
+      "email": "seller@test.de"
+    }
+  },
+  "buyer": {
+    "name": "[Buyer name]",
+    "tradingName": null,
+    "identifiers": [],
+    "legalRegistrationId": null,
+    "vatId": null,
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "buyer@info.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "[Buyer address line 1]",
+      "line2": null,
+      "line3": null,
+      "city": "[Buyer city]",
+      "postalCode": "12345",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": null
+  },
+  "payee": null,
+  "taxRepresentative": null,
+  "delivery": null,
+  "totals": {
+    "lineNetTotal": 2374.68,
+    "allowanceTotal": null,
+    "chargeTotal": null,
+    "netTotal": 2374.68,
+    "vatTotal": 451.19,
+    "vatTotalTaxCurrency": null,
+    "grossTotal": 2825.87,
+    "prepaidAmount": null,
+    "roundingAmount": null,
+    "amountDue": 2825.87
+  },
+  "vatBreakdown": [
+    {
+      "categoryCode": "S",
+      "rate": 19.0,
+      "taxableAmount": 2374.68,
+      "taxAmount": 451.19,
+      "exemptionReason": null,
+      "exemptionReasonCode": null
+    }
+  ],
+  "allowancesCharges": [],
+  "lines": [
+    {
+      "id": "0020",
+      "name": "Zentrale Administrationslösung Bereitstellung von Werkzeugen zur Administration/Betreuung",
+      "description": null,
+      "note": null,
+      "quantity": 12.0,
+      "unitCode": "XPP",
+      "netPrice": 197.89,
+      "grossPrice": null,
+      "priceBaseQuantity": null,
+      "netAmount": 2374.68,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": "519304",
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    }
+  ],
+  "attachments": []
+}

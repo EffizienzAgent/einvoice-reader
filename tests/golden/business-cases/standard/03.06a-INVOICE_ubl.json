@@ -1,0 +1,240 @@
+{
+  "number": "112233",
+  "typeCode": "380",
+  "type": "invoice",
+  "isCreditNote": false,
+  "issueDate": "2021-04-23",
+  "dueDate": "2021-04-28",
+  "taxPointDate": null,
+  "currency": "EUR",
+  "taxCurrency": null,
+  "buyerReference": "991-33333TEST-33",
+  "orderReference": null,
+  "salesOrderReference": null,
+  "contractReference": null,
+  "projectReference": null,
+  "buyerAccountingReference": null,
+  "invoicedObjectIdentifier": null,
+  "receivingAdviceReference": null,
+  "despatchAdviceReference": null,
+  "tenderReference": null,
+  "businessProcess": "urn:fdc:peppol.eu:2017:poacc:billing:01:1.0",
+  "precedingInvoices": [],
+  "deliveryDate": "2020-11-23",
+  "invoicingPeriod": null,
+  "notes": [
+    {
+      "subjectCode": "ADU",
+      "text": "Rechnung enthält 100 EUR (Umsatz)Steuer auf Altteile gem. Abschn. 10.5 Abs. 3 UStAE"
+    }
+  ],
+  "paymentTerms": null,
+  "payment": {
+    "meansCode": "58",
+    "meansText": "SEPA-Überweisung",
+    "remittanceInformation": null,
+    "accounts": [
+      {
+        "iban": "DE79000000001234567890",
+        "bic": null,
+        "name": "Testkäufer"
+      }
+    ],
+    "card": null,
+    "directDebit": null
+  },
+  "seller": {
+    "name": "Testverkäufer",
+    "tradingName": null,
+    "identifiers": [
+      {
+        "value": "116078",
+        "scheme": null
+      }
+    ],
+    "legalRegistrationId": null,
+    "vatId": "DE12345464867",
+    "taxNumber": "1121081508150",
+    "electronicAddress": {
+      "value": "seller@email.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "Teststraße",
+      "line2": null,
+      "line3": null,
+      "city": "12345",
+      "postalCode": "Testhausen",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": {
+      "name": "Test",
+      "phone": "123456789",
+      "email": "test@test.de"
+    }
+  },
+  "buyer": {
+    "name": "Testkäufer",
+    "tradingName": null,
+    "identifiers": [],
+    "legalRegistrationId": null,
+    "vatId": null,
+    "taxNumber": null,
+    "electronicAddress": {
+      "value": "buyer@info.de",
+      "scheme": "EM"
+    },
+    "address": {
+      "line1": "Teststraße",
+      "line2": null,
+      "line3": null,
+      "city": "12345",
+      "postalCode": "Testhausen",
+      "countrySubdivision": null,
+      "countryCode": "DE"
+    },
+    "contact": null
+  },
+  "payee": null,
+  "taxRepresentative": null,
+  "delivery": null,
+  "totals": {
+    "lineNetTotal": 1500.0,
+    "allowanceTotal": null,
+    "chargeTotal": null,
+    "netTotal": 1500.0,
+    "vatTotal": 304.0,
+    "vatTotalTaxCurrency": null,
+    "grossTotal": 1804.0,
+    "prepaidAmount": null,
+    "roundingAmount": null,
+    "amountDue": 1804.0
+  },
+  "vatBreakdown": [
+    {
+      "categoryCode": "S",
+      "rate": 19.0,
+      "taxableAmount": 1600.0,
+      "taxAmount": 304.0,
+      "exemptionReason": null,
+      "exemptionReasonCode": null
+    },
+    {
+      "categoryCode": "Z",
+      "rate": 0.0,
+      "taxableAmount": -100.0,
+      "taxAmount": 0.0,
+      "exemptionReason": null,
+      "exemptionReasonCode": null
+    }
+  ],
+  "allowancesCharges": [],
+  "lines": [
+    {
+      "id": "1",
+      "name": "Neumotor",
+      "description": null,
+      "note": null,
+      "quantity": 1.0,
+      "unitCode": "C62",
+      "netPrice": 1000.0,
+      "grossPrice": 1010.0,
+      "priceBaseQuantity": null,
+      "netAmount": 1000.0,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    },
+    {
+      "id": "2",
+      "name": "Bemessungsgrundlage und Umsatzsteuer auf Altteil",
+      "description": null,
+      "note": null,
+      "quantity": 1.0,
+      "unitCode": "C62",
+      "netPrice": 100.0,
+      "grossPrice": 110.0,
+      "priceBaseQuantity": null,
+      "netAmount": 100.0,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    },
+    {
+      "id": "3",
+      "name": "Korrektur/Stornierung Bemessungsgrundlage der Umsatzsteuer auf Altteil",
+      "description": null,
+      "note": null,
+      "quantity": -1.0,
+      "unitCode": "C62",
+      "netPrice": 100.0,
+      "grossPrice": 110.0,
+      "priceBaseQuantity": null,
+      "netAmount": -100.0,
+      "vatCategoryCode": "Z",
+      "vatRate": 0.0,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    },
+    {
+      "id": "4",
+      "name": "Montage",
+      "description": null,
+      "note": null,
+      "quantity": 1.0,
+      "unitCode": "HUR",
+      "netPrice": 500.0,
+      "grossPrice": 510.0,
+      "priceBaseQuantity": null,
+      "netAmount": 500.0,
+      "vatCategoryCode": "S",
+      "vatRate": 19.0,
+      "sellerItemId": null,
+      "buyerItemId": null,
+      "standardItemId": null,
+      "orderLineReference": null,
+      "period": null,
+      "allowancesCharges": [],
+      "parentLineId": null,
+      "lineStatusReasonCode": null,
+      "accountingReference": null,
+      "objectIdentifier": null,
+      "attributes": [],
+      "classifications": []
+    }
+  ],
+  "attachments": []
+}
