@@ -94,6 +94,7 @@ Things to know when you book from this data:
 - **`valid` and `isEInvoice` can be `null`.** That happens when `validate=false`, or when validation could not run in time (`validation.performed` is `false`, and `warnings` says why). Treat `null` as "unknown, check again", never as `false`.
 - **Credit notes** keep the amounts as written, usually positive. Use `isCreditNote` (or `type`) to flip the sign yourself. A credit note that already carries negative amounts must not be flipped again.
 - **Several bank accounts** are all listed in `payment.accounts`. If `payee` is set, the accounts belong to the payee (factoring), not the seller. On credit notes the account can be your own (the buyer's) account to receive the refund.
+- **IBAN and BIC** are returned without spaces and in upper case. A value that does not look like an IBAN (for example a proprietary account number) stays as written. An IBAN that fails its checksum still comes through, but with a warning.
 - **`payment.meansCode` 59** means SEPA direct debit: the supplier collects, do not transfer.
 - **Sub-lines:** lines with a `parentLineId` are sub-lines (ZUGFeRD EXTENDED, XRechnung extension CII). Do not add them on top of their parent, and never sum lines with `lineStatusReasonCode` `INFORMATION`; use `totals` for amounts. UBL `SubInvoiceLine`s are not listed (a warning says so).
 - **Booking references:** `buyerAccountingReference` (BT-19), `invoicedObjectIdentifier` (BT-18, e.g. a VIN or contract), and per line `accountingReference`, `objectIdentifier`, `attributes` and `classifications`.

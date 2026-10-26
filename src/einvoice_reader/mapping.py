@@ -1,3 +1,4 @@
+import re
 from decimal import Decimal, InvalidOperation
 
 import facturx
@@ -168,7 +169,27 @@ def _xpath_text(node: etree._Element, path: str) -> str | None:
     return _text(next(iter(node.xpath(path)), None))
 
 
-def _accounts(root: etree._Element, syntax: str) -> list[Account]:
+_IBAN = re.compile(r"[A-Z]{2}\d{2}[A-Z0-9]{10,30}")
+
+
+def normalize_iban(value: str | None) -> str | None:
+    """IBANs without spaces and in upper case; other account identifiers stay as written."""
+    if value is None:
+        return None
+    compact = re.sub(r"\s", "", value).upper()
+    return compact if _IBAN.fullmatch(compact) else value.strip()
+
+
+def normalize_bic(value: str | None) -> str | None:
+    return re.sub(r"\s", "", value).upper() if value else value
+
+
+def iban_checksum_ok(iban: str) -> bool:
+    rearranged = iban[4:] + iban[:4]
+    return int("".join(str(int(char, 36)) for char in rearranged)) % 97 == 1
+
+
+def _accounts(root: etree._Element, syntax: str, warnings: list[str]) -> list[Account]:
     if syntax == "CII":
         means = root.xpath("//*[local-name()='SpecifiedTradeSettlementPaymentMeans']")
         paths = (
@@ -190,7 +211,10 @@ def _accounts(root: etree._Element, syntax: str) -> list[Account]:
     for node in means:
         iban, bic, name = (_xpath_text(node, path) for path in paths)
         if iban:
-            accounts.append(Account(iban=iban, bic=bic, name=name))
+            iban = normalize_iban(iban)
+            if _IBAN.fullmatch(iban) and not iban_checksum_ok(iban):
+                warnings.append(f"IBAN {iban} fails the checksum; check it with the supplier")
+            accounts.append(Account(iban=iban, bic=normalize_bic(bic), name=name))
     return accounts
 
 
@@ -282,7 +306,7 @@ def _payment(bt: dict, accounts: list[Account]) -> Payment:
     debit = DirectDebit(
         mandate_reference=_text(bt.get("BT-89")),
         creditor_id=_text(bt.get("BT-90")),
-        debited_account=_text(bt.get("BT-91")),
+        debited_account=normalize_iban(_text(bt.get("BT-91"))),
     )
     return Payment(
         means_code=_text(bt.get("BT-81")),
@@ -401,7 +425,7 @@ def map_invoice(source: Source, fmt: FormatInfo) -> tuple[Invoice, list[str]]:
             for n in bt.get("BG-1") or []
         ],
         payment_terms=_text(bt.get("BT-20")),
-        payment=_payment(bt, _accounts(source.root, fmt.syntax)),
+        payment=_payment(bt, _accounts(source.root, fmt.syntax, warnings)),
         seller=_party(bt.get("BG-4"), "Seller", warnings),
         buyer=_party(bt.get("BG-7"), "Buyer", warnings),
         payee=_payee(bt.get("BG-10")),
