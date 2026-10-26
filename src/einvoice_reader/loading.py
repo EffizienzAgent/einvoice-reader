@@ -1,11 +1,13 @@
 import io
 import itertools
 import logging
+import re
 from dataclasses import dataclass, field
 from typing import Literal
 
 from lxml import etree
 from pypdf import PdfReader, apply_configuration
+from pypdf.errors import PdfReadError
 
 from einvoice_reader.errors import ReadError
 
@@ -101,9 +103,32 @@ def _load_pdf(data: bytes) -> Source:
         return _load_pdf_limited(data)
 
 
+def _open_pdf(data: bytes) -> PdfReader:
+    try:
+        return PdfReader(io.BytesIO(data))
+    except PdfReadError as e:
+        repaired = _crypt_filter_length_in_bytes(data)
+        if "encryption key length" not in str(e) or repaired == data:
+            raise
+        return PdfReader(io.BytesIO(repaired))
+
+
+def _crypt_filter_length_in_bytes(data: bytes) -> bytes:
+    """Some generators (e.g. Compart DocBridge) write the AES crypt filter /Length in bits."""
+
+    def fix(match: re.Match) -> bytes:
+        return re.sub(
+            rb"(/Length\s+)(128|256)\b",
+            lambda m: m.group(1) + {b"128": b"16 ", b"256": b"32 "}[m.group(2)],
+            match.group(0),
+        )
+
+    return re.sub(rb"<<[^<>]*?/CFM\s*/AESV[23][^<>]*?>>", fix, data)
+
+
 def _load_pdf_limited(data: bytes) -> Source:
     try:
-        reader = PdfReader(io.BytesIO(data))
+        reader = _open_pdf(data)
         encrypted = reader.is_encrypted
     except Exception as e:
         raise ReadError("MALFORMED_PDF", f"Not a readable PDF: {e}") from e

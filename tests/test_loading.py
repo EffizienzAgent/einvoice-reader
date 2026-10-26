@@ -166,3 +166,23 @@ def test_second_invoice_xml_warns(xrechnung_cii, xrechnung_ubl):
     source = load(pdf_with({"factur-x.xml": xrechnung_cii, "rechnung.xml": xrechnung_ubl}))
     assert source.embedded_file_name == "factur-x.xml"
     assert any("rechnung.xml" in w for w in source.warnings)
+
+
+@pytest.mark.parametrize("algorithm", ["AES-128", "AES-256"])
+def test_crypt_filter_length_in_bits_is_tolerated(algorithm, xrechnung_cii):
+    data = pdf_with({"factur-x.xml": xrechnung_cii}, encrypt=algorithm)
+    bytes_length, bits_length = (b"16", b"128") if algorithm == "AES-128" else (b"32", b"256")
+    broken = data.replace(
+        b"/Length " + bytes_length + b"\n>>", b"/Length " + bits_length + b">>", 1
+    )
+    assert broken != data and len(broken) == len(data)
+    source = load(broken)
+    assert source.embedded_file_name == "factur-x.xml"
+
+
+def test_crypt_filter_length_in_bits_without_invoice_goes_to_ocr():
+    data = pdf_with({}, encrypt="AES-128")
+    broken = data.replace(b"/Length 16\n>>", b"/Length 128>>", 1)
+    with pytest.raises(ReadError) as excinfo:
+        load(broken)
+    assert excinfo.value.code == "NO_EMBEDDED_XML"
