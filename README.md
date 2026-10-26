@@ -149,6 +149,10 @@ Repository setup, needed once for releases to work:
 - Settings → Actions → General: enable **Allow GitHub Actions to create and approve pull requests**. release-please opens its release PR with the default `GITHUB_TOKEN`. CI does not run on that PR (GitHub never triggers workflows from `GITHUB_TOKEN` events); it only changes the version and `CHANGELOG.md`, and the image is built after the merge.
 - After the first image push, set the GHCR package `einvoice-reader` to **public** so that anonymous `docker pull` works.
 
+## Professional setup & support
+
+Need help receiving, validating or sending e-invoices in your business, or integrating this service into n8n, your ERP or your bookkeeping? Write to oss@effizienzagent.de (English or German). German-speaking SMEs: see [mittelstandshub.de](https://mittelstandshub.de).
+
 ## Licences
 
 The code is licensed under Apache-2.0. Bundled and installed third-party components keep their own licences; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). In short:
