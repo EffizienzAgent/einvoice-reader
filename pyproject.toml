@@ -1,6 +1,6 @@
 [project]
 name = "einvoice-reader"
-version = "0.1.0"
+version = "0.1.1"
 description = "Read and validate ZUGFeRD, Factur-X and XRechnung e-invoices over a stable HTTP API"
 readme = "README.md"
 license = "Apache-2.0"
