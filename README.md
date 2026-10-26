@@ -11,9 +11,11 @@ Amounts come straight from the XML and are never recalculated. Validation uses t
 ## Quick start
 
 ```bash
-docker run -p 127.0.0.1:8080:8080 -e API_KEY=change-me ghcr.io/effizienzagent/einvoice-reader:0.1.0
+docker run -p 127.0.0.1:8080:8080 -e API_KEY=change-me ghcr.io/effizienzagent/einvoice-reader:latest
 curl -F file=@invoice.pdf http://localhost:8080/v1/invoices/parse
 ```
+
+For production, pin a version from the [releases](https://github.com/EffizienzAgent/einvoice-reader/releases) instead of `latest` and upgrade on purpose: a new version can bring updated validation rules that change `valid` for the same invoice.
 
 The OpenAPI documentation is at `http://localhost:8080/docs`.
 
