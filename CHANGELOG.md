@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.2.0](https://github.com/EffizienzAgent/einvoice-reader/compare/v0.1.1...v0.2.0) (2026-10-26)
+
+
+### Features
+
+* normalise IBAN and BIC and warn on invalid IBAN checksums ([040bbd8](https://github.com/EffizienzAgent/einvoice-reader/commit/040bbd8307ea0293f1041a6086bb28a8e8cb0ec7))
+
+
+### Documentation
+
+* add professional setup and support section ([3507691](https://github.com/EffizienzAgent/einvoice-reader/commit/3507691b2bb45bd15b036afa327929ae0a80d399))
+* link the e-invoice integration page for German-speaking SMEs ([39686c3](https://github.com/EffizienzAgent/einvoice-reader/commit/39686c3b3335b8f43961ba7f745668cf265f1004))
+* use latest in the quick start and recommend pinning a release ([98b8fa1](https://github.com/EffizienzAgent/einvoice-reader/commit/98b8fa18741b896629a6d291182d17c645d52e13))
+
 ## [0.1.1](https://github.com/EffizienzAgent/einvoice-reader/compare/v0.1.0...v0.1.1) (2026-10-26)
 
 
